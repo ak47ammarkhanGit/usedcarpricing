@@ -10,52 +10,55 @@
         <div class="mb-3">
             <label class="form-label">Length Between 0 and 1</label>
             <input class="form-control" type="number" name="length"
-                placeholder="Enter Length" min='0' max='1' />
+                placeholder="Enter Length" step="0.01" min='0' max='1' />
         </div>
         <div class="mb-3">
-            <label class="form-label">Width Between 0 and 100</label>
+            <label class="form-label">Width Between 0 and 1</label>
             <input class="form-control" type="number" name="width"
-                placeholder="Enter Width" min='0' max='1' />
+                placeholder="Enter Width" step="0.01" min='0' max='1' />
         </div>
         <div class="mb-3">
-            <label class="form-label">Curb Weight</label>
+            <label class="form-label">Curb Weight Between 0 and 4000</label>
             <input class="form-control" type="number" name="curb_weight"
-                placeholder="Enter Curb Weight" />
+                placeholder="Enter Curb Weight" min='0' max='4000' />
         </div>
         <div class="mb-3">
-            <label class="form-label">Engine Size</label>
+            <label class="form-label">Engine Size Between 0 and 300</label>
             <input class="form-control" type="number" name="engine_size"
-                placeholder="Enter Engine Size" />
+                placeholder="Enter Engine Size" min='0' max='300' />
         </div>
         <div class="mb-3">
-            <label class="form-label">Horsepower</label>
+            <label class="form-label">Horsepower Between 0 and 300</label>
             <input class="form-control" type="number" name="horsepower"
-                placeholder="Enter Horsepower" />
+                placeholder="Enter Horsepower" min='0' max='300' />
         </div>
         <div class="mb-3">
-            <label class="form-label">City L/100km</label>
+            <label class="form-label">City L/100km Between 0 and 20</label>
             <input class="form-control" type="number" name="city_L_per_100km"
-                placeholder="Enter City L/100km" />
+                placeholder="Enter City L/100km" step="0.01" min='0' max='20' />
         </div>
         <div class="mb-3">
-            <label class="form-label">Highway L/100km</label>
+            <label class="form-label">Highway L/100km Between 0 and 20</label>
             <input class="form-control" type="number" name="highway_L_per_100km"
-                placeholder="Enter Highway L/100km" />
+                placeholder="Enter Highway L/100km" step="0.01" min='0' max='20' />
         </div>
         <div class="mb-3">
-            <label class="form-label">Wheel Base</label>
+            <label class="form-label">Wheel Base Between 0 and 200</label>
             <input class="form-control" type="number" name="wheel_base"
-                placeholder="Enter Wheel Base" />
+                placeholder="Enter Wheel Base" step="0.01" min='0' max='200' />
         </div>
         <div class="mb-3">
-            <label class="form-label">Bore</label>
+            <label class="form-label">Bore Between 0 and 5</label>
             <input class="form-control" type="number" name="bore"
-                placeholder="Enter Bore" />
+                placeholder="Enter Bore" step="0.01" min='0' max='5' />
         </div>
         <div class="mb-3">
             <label class="form-label">Drive Wheels</label>
-            <input class="form-control" type="text" name="drive_wheels"
-                placeholder="Enter Drive Wheels" />
+            <select class="form-control" name="drive_wheels" required>
+                <option value="fwd">FWD</option>
+                <option value="rwd">RWD</option>
+                <option value="4wd">4WD</option>
+            </select>
         </div>
         <div class="mb-3">
             <input class="btn btn-primary" type="submit" value="Predict Price" required />
