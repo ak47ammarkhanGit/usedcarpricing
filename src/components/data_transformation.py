@@ -28,8 +28,8 @@ class DataTransformation:
         
         '''
         try:
-            numerical_columns = ["length", "width", "curb-weight", "engine-size", "horsepower", "city-L/100km", "highway-L/100km", "wheel-base", "bore"]
-            categorical_columns = ["drive-wheels"]
+            numerical_columns = ["length", "width", "curb_weight", "engine_size", "horsepower", "city_L_per_100km", "highway_L_per_100km", "wheel_base", "bore"]
+            categorical_columns = ["drive_wheels"]
 
             num_pipeline= Pipeline(
                 steps=[
@@ -80,7 +80,7 @@ class DataTransformation:
             preprocessing_obj=self.get_data_transformer_object()
 
             target_column_name="price"
-            numerical_columns = ["length", "width", "curb-weight", "engine-size", "horsepower", "city-L/100km", "highway-L/100km", "wheel-base", "bore"]
+            numerical_columns = ["length", "width", "curb_weight", "engine_size", "horsepower", "city_L_per_100km", "highway_L_per_100km", "wheel_base", "bore"]
 
             input_feature_train_df=train_df.drop(columns=[target_column_name],axis=1)
             target_feature_train_df=train_df[target_column_name]

@@ -1,4 +1,4 @@
-length,width,curb-weight,engine-size,horsepower,city-L/100km,highway-L/100km,wheel-base,bore,drive-wheels,price
+length,width,curb_weight,engine_size,horsepower,city_L_per_100km,highway_L_per_100km,wheel_base,bore,drive_wheels,price
 0.811148486,0.890277778,2548,130,111,11.19047619047619,8.703703703703704,88.6,3.47,rwd,13495
 0.811148486,0.890277778,2548,130,111,11.19047619047619,8.703703703703704,88.6,3.47,rwd,16500
 0.822681403,0.909722222,2823,152,154,12.36842105263158,9.038461538461538,94.5,2.68,rwd,16500

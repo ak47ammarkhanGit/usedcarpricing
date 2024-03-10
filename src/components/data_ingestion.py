@@ -28,7 +28,7 @@ class DataIngestion:
         logging.info("Entered the data ingestion method or component")
         try:
             df=pd.read_csv('notebook\data\clean_df.csv')
-            df=df[['length', 'width', 'curb-weight', 'engine-size', 'horsepower', 'city-L/100km', 'highway-L/100km', 'wheel-base', 'bore', 'drive-wheels', 'price']]
+            df=df[['length', 'width', 'curb_weight', 'engine_size', 'horsepower', 'city_L_per_100km', 'highway_L_per_100km', 'wheel_base', 'bore', 'drive_wheels', 'price']]
             logging.info('Read the dataset as dataframe')
 
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path),exist_ok=True)

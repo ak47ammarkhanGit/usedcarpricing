@@ -1,0 +1,68 @@
+<html>
+<body>
+    <div class="login">
+       <h1>Used Cars Pricing Indicator</h1>
+   
+       <form action="{{ url_for('predict_datapoint')}}" method="post">
+        <h1>
+            <legend>Used Cars Pricing Prediction</legend>
+        </h1>
+        <div class="mb-3">
+            <label class="form-label">Length Between 0 and 1</label>
+            <input class="form-control" type="number" name="length"
+                placeholder="Enter Length" min='0' max='1' />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Width Between 0 and 100</label>
+            <input class="form-control" type="number" name="width"
+                placeholder="Enter Width" min='0' max='1' />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Curb Weight</label>
+            <input class="form-control" type="number" name="curb_weight"
+                placeholder="Enter Curb Weight" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Engine Size</label>
+            <input class="form-control" type="number" name="engine_size"
+                placeholder="Enter Engine Size" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Horsepower</label>
+            <input class="form-control" type="number" name="horsepower"
+                placeholder="Enter Horsepower" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">City L/100km</label>
+            <input class="form-control" type="number" name="city_L_per_100km"
+                placeholder="Enter City L/100km" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Highway L/100km</label>
+            <input class="form-control" type="number" name="highway_L_per_100km"
+                placeholder="Enter Highway L/100km" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Wheel Base</label>
+            <input class="form-control" type="number" name="wheel_base"
+                placeholder="Enter Wheel Base" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Bore</label>
+            <input class="form-control" type="number" name="bore"
+                placeholder="Enter Bore" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Drive Wheels</label>
+            <input class="form-control" type="text" name="drive_wheels"
+                placeholder="Enter Drive Wheels" />
+        </div>
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Predict Price" required />
+        </div>
+    </form>
+    <h2>
+       THE  prediction is {{results}}
+    </h2>
+   <body>
+</html>
